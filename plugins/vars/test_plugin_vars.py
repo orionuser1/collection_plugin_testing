@@ -45,8 +45,6 @@ import sys
 
 from ansible.plugins.vars import BaseVarsPlugin
 
-from ansible_collections.alikins.collection_inspect.plugins.module_utils.collection_inspect import get_dunders
-
 log = logging.getLogger(__name__)
 FOUND = {}
 
@@ -54,17 +52,12 @@ FOUND = {}
 class VarsModule(BaseVarsPlugin):
 
     def get_vars(self, loader, path, entities, cache=True):
-        ''' parses the inventory file '''
-
-        log.debug('loader=%s, path=%s', loader, path)
-
         if not isinstance(entities, list):
             entities = [entities]
 
         super(VarsModule, self).get_vars(loader, path, entities)
 
-        data = {'collection_inspect': {}}
-        data['collection_inspect'].update(get_dunders(globals()))
-
-        data['collection_inspect']['sys_path'] = sys.path
+        data = {
+          'test_plugin_vars': True,
+        }
         return data
