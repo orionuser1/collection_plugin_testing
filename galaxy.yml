@@ -1,12 +1,12 @@
-namespace: "alikins"
-name: "collection_inspect"
+namespace: "orionuser1"
+name: "collection_plugin_testing"
 version: "0.0.20"
 license:
   - MIT
 readme: "README.md"
 authors:
-  - "Adrian Likins <alikins@redhat.com>"
-description: "A set of 'collection_inspect' plugins for debugging collection loading"
+  - "Calvin Spealman <cspealma@redhat.com>"
+description: "A set of test plugins of every type"
 dependencies:
 repository:
 documentation:
