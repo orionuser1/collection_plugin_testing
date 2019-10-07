@@ -9,7 +9,6 @@ authors:
   - "Calvin Spealman <cspealma@redhat.com>"
 description: "A set of test plugins of every type"
 dependencies:
-repository:
 documentation:
 homepage:
 issues:
