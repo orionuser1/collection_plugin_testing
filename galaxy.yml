@@ -1,5 +1,6 @@
 namespace: "orionuser1"
 name: "collection_plugin_testing"
+repository: "https://github.com/orionuser1/collection_plugin_testing/"
 version: "0.0.20"
 license:
   - MIT
